@@ -24,6 +24,7 @@ public class QuestionController {
 
     @GetMapping("category/{category}")
     public ResponseEntity<List<Question>> getQuestionsByCategory(@PathVariable String category) {
+        System.out.println("This will give you category");
         return questionService.getQuestionsByCategory(category);
     }
 
